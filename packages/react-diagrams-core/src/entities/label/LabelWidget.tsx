@@ -88,6 +88,7 @@ export class LabelWidget extends React.Component<LabelWidgetProps> {
 
 	render() {
 		const canvas = this.props.engine.getCanvas();
+		if(!canvas) return null;
 		return (
 			<S.Foreign key={this.props.label.getID()} width={canvas.offsetWidth} height={canvas.offsetHeight}>
 				<S.Label ref={this.ref}>

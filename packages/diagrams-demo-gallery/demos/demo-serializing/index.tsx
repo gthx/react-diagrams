@@ -25,6 +25,7 @@ export default () => {
 
 	//3-C) link the 2 nodes together
 	var link1 = port1.link(port2);
+	link1.addLabel('link1 label');
 
 	//4) add the models to the root graph
 	model.addAll(node1, node2, link1);
